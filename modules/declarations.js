@@ -56,13 +56,13 @@ module.exports = function (Config) {
     this.Tasks = {};
     this.TwilioApi = require('./twilio-api')(Config, this);
     this.apn = require('apn');
-    this.apnProvider = new this.apn.Provider({
-    token: { 
-        key: "/home/developer/public_html/ammoconnect/server/modules/AuthKey_LYL5MP9265.p8",
-        keyId: "LYL5MP9265",
-        teamId: "FVD8SMFC87"
-    },
-    production: false
-});
+    //this.apnProvider = new this.apn.Provider({
+    //    token: {
+    //        key: "/Users/user/Desktop/Projects/Ammo\ Connect/Server/modules/AuthKey_LYL5MP9265.p8",
+    //        keyId: "LYL5MP9265",
+    //        teamId: "FVD8SMFC87"
+    //    },
+    //    production: false
+    //});
     return this;
 };
